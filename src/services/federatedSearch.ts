@@ -65,34 +65,31 @@ async function searchMerchant(
   query: SearchQuery,
 ): Promise<{ products: Product[] }> {
   console.log(`[MERCHANT_SEARCH] ${merchant.name}: ${query.query}`);
+  const baseUrl = process.env.PLATFORM_PRODUCTS_SEARCH_URL ?? "http://localhost:3000/api/products/search";
 
-  await new Promise((resolve) => setTimeout(resolve, 50 + Math.random() * 100));
-
-  return {
-    products: generateMockProducts(merchant, query),
-  };
-}
-
-function generateMockProducts(merchant: Merchant, query: SearchQuery): Product[] {
-  const count = Math.floor(Math.random() * 5) + 1;
-  const products: Product[] = [];
-
-  for (let i = 0; i < count; i += 1) {
-    products.push({
-      id: `${merchant.id}_prod_${i + 1}`,
-      name: `${query.query} - ${merchant.name} Product ${i + 1}`,
-      description: `High-quality ${query.query} from ${merchant.name}`,
-      price: Math.floor(Math.random() * 100) + 20,
-      currency: "AUD",
-      category: merchant.categories[0] || "general",
-      merchantId: merchant.id,
-      merchantName: merchant.name,
-      inStock: Math.random() > 0.2,
-      gtin: `952${Math.floor(Math.random() * 10_000_000_000)}`,
+  try {
+    const res = await fetch(baseUrl, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        merchantId: merchant.id,
+        query: query.query,
+        category: query.category,
+        maxPrice: query.maxPrice,
+      }),
     });
-  }
 
-  return products;
+    if (!res.ok) {
+      console.warn(`[MERCHANT_SEARCH] ${merchant.name} API error: ${res.status}`);
+      return { products: [] };
+    }
+
+    const data = (await res.json()) as { products?: Product[] };
+    return { products: data.products ?? [] };
+  } catch (error) {
+    console.warn(`[MERCHANT_SEARCH] ${merchant.name} request failed:`, error);
+    return { products: [] };
+  }
 }
 
 function applyPriceFilters(products: Product[], query: SearchQuery): Product[] {

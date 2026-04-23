@@ -1,0 +1,162 @@
+[
+  {
+    "id": "merchant_bluebottle",
+    "name": "Blue Bottle Coffee",
+    "domain": "bluebottlecoffee.com.au",
+    "endpoint": "https://mock-mcp-bluebottle.rotavera.io",
+    "categories": ["coffee", "beverages"],
+    "status": "active"
+  },
+  {
+    "id": "merchant_intelligentsia",
+    "name": "Intelligentsia Coffee",
+    "domain": "intelligentsiacoffee.com.au",
+    "endpoint": "https://mock-mcp-intelligentsia.rotavera.io",
+    "categories": ["coffee", "beverages"],
+    "status": "active"
+  },
+  {
+    "id": "merchant_fourbarrel",
+    "name": "Four Barrel Coffee",
+    "domain": "fourbarrelcoffee.com.au",
+    "endpoint": "https://mock-mcp-fourbarrel.rotavera.io",
+    "categories": ["coffee", "beverages"],
+    "status": "active"
+  },
+  {
+    "id": "merchant_vinomofo",
+    "name": "Vinomofo",
+    "domain": "vinomofo.com",
+    "endpoint": "https://mock-mcp-vinomofo.rotavera.io",
+    "categories": ["wine", "beverages", "alcohol"],
+    "status": "active"
+  },
+  {
+    "id": "merchant_danmurphys",
+    "name": "Dan Murphy's",
+    "domain": "danmurphys.com.au",
+    "endpoint": "https://mock-mcp-danmurphys.rotavera.io",
+    "categories": ["wine", "beer", "spirits", "alcohol"],
+    "status": "active"
+  },
+  {
+    "id": "merchant_cellarmaster",
+    "name": "Cellar Master Wines",
+    "domain": "cellarmaster.com.au",
+    "endpoint": "https://mock-mcp-cellarmaster.rotavera.io",
+    "categories": ["wine", "alcohol"],
+    "status": "active"
+  },
+  {
+    "id": "merchant_booktopia",
+    "name": "Booktopia",
+    "domain": "booktopia.com.au",
+    "endpoint": "https://mock-mcp-booktopia.rotavera.io",
+    "categories": ["books", "media"],
+    "status": "active"
+  },
+  {
+    "id": "merchant_dymocks",
+    "name": "Dymocks",
+    "domain": "dymocks.com.au",
+    "endpoint": "https://mock-mcp-dymocks.rotavera.io",
+    "categories": ["books", "stationery"],
+    "status": "active"
+  },
+  {
+    "id": "merchant_readings",
+    "name": "Readings",
+    "domain": "readings.com.au",
+    "endpoint": "https://mock-mcp-readings.rotavera.io",
+    "categories": ["books", "media"],
+    "status": "active"
+  },
+  {
+    "id": "merchant_jbhifi",
+    "name": "JB Hi-Fi",
+    "domain": "jbhifi.com.au",
+    "endpoint": "https://mock-mcp-jbhifi.rotavera.io",
+    "categories": ["electronics", "media", "appliances"],
+    "status": "active"
+  },
+  {
+    "id": "merchant_harveynorman",
+    "name": "Harvey Norman",
+    "domain": "harveynorman.com.au",
+    "endpoint": "https://mock-mcp-harveynorman.rotavera.io",
+    "categories": ["electronics", "furniture", "appliances"],
+    "status": "active"
+  },
+  {
+    "id": "merchant_mwave",
+    "name": "Mwave",
+    "domain": "mwave.com.au",
+    "endpoint": "https://mock-mcp-mwave.rotavera.io",
+    "categories": ["electronics", "computers"],
+    "status": "active"
+  },
+  {
+    "id": "merchant_theiconic",
+    "name": "THE ICONIC",
+    "domain": "theiconic.com.au",
+    "endpoint": "https://mock-mcp-theiconic.rotavera.io",
+    "categories": ["clothing", "fashion", "accessories"],
+    "status": "active"
+  },
+  {
+    "id": "merchant_asos",
+    "name": "ASOS",
+    "domain": "asos.com",
+    "endpoint": "https://mock-mcp-asos.rotavera.io",
+    "categories": ["clothing", "fashion"],
+    "status": "active"
+  },
+  {
+    "id": "merchant_countryroad",
+    "name": "Country Road",
+    "domain": "countryroad.com.au",
+    "endpoint": "https://mock-mcp-countryroad.rotavera.io",
+    "categories": ["clothing", "fashion", "homewares"],
+    "status": "active"
+  },
+  {
+    "id": "merchant_mecca",
+    "name": "MECCA",
+    "domain": "mecca.com.au",
+    "endpoint": "https://mock-mcp-mecca.rotavera.io",
+    "categories": ["beauty", "cosmetics"],
+    "status": "active"
+  },
+  {
+    "id": "merchant_sephora",
+    "name": "Sephora",
+    "domain": "sephora.com.au",
+    "endpoint": "https://mock-mcp-sephora.rotavera.io",
+    "categories": ["beauty", "cosmetics", "skincare"],
+    "status": "active"
+  },
+  {
+    "id": "merchant_adorebeauty",
+    "name": "Adore Beauty",
+    "domain": "adorebeauty.com.au",
+    "endpoint": "https://mock-mcp-adorebeauty.rotavera.io",
+    "categories": ["beauty", "skincare", "haircare"],
+    "status": "active"
+  },
+  {
+    "id": "merchant_chemistwarehouse",
+    "name": "Chemist Warehouse",
+    "domain": "chemistwarehouse.com.au",
+    "endpoint": "https://mock-mcp-chemistwarehouse.rotavera.io",
+    "categories": ["pharmacy", "health", "beauty"],
+    "status": "active"
+  },
+  {
+    "id": "merchant_priceline",
+    "name": "Priceline",
+    "domain": "priceline.com.au",
+    "endpoint": "https://mock-mcp-priceline.rotavera.io",
+    "categories": ["pharmacy", "health", "beauty"],
+    "status": "active"
+  }
+]
